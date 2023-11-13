@@ -1,26 +1,9 @@
-section {
+.homeContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: rgb(13, 13, 13);
 }
 
-.titleSection {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(255, 179, 179);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-}
-
-.contentSections {
-
-}
-
-.contentSection {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(218, 148, 148);
-  margin: 2px;
+.cardSection {
+  padding: 1.25rem;
 }

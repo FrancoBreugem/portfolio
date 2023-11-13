@@ -3,3 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'GothicA1';
+  src: local('GothicA1'), url('./fonts/GothicA1-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'GothicA1', sans-serif;
+  color: white;
+}
+
+p {
+  line-height: 1.75rem;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}

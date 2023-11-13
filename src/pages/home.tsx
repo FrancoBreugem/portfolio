@@ -1,22 +1,19 @@
+import Bio from '../components/bio/bio';
+import Card from '../components/card/card';
 import styles from './home.module.css';
 
 function Home() {
 
   return (
-    <>
-      <section>
-        <div className={styles.titleSection}>
-           <h1>New Arrivals</h1>
-        </div>
+    <div className={styles.homeContainer}>
+      <Bio />
 
-        <div className={styles.contentSections}>
-          <div className={styles.contentSection}>Card</div>
-          <div className={styles.contentSection}>Card</div>
-          <div className={styles.contentSection}>Card</div>
-          <div className={styles.contentSection}>Card</div>
-        </div>
-      </section>
-    </>
+      <div className={styles.cardSection}>
+        {Array.from({ length: 9 }).map((_, index) => (
+          <Card key={index} />
+        ))}
+      </div>
+    </div>
   )
 }
 
