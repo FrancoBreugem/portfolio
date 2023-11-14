@@ -20,17 +20,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url('./fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 
     // 'FiraCode', 
     // 'GothicA1', 
+    'Poppins',
     sans-serif;
   color: $text-colour-base;
+  letter-spacing: 0.25px;
 }
 
 p {
   line-height: 1.75rem;
   font-weight: 300;
+  font-size: 1.1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,3 +49,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.color-pop {
+  color: $text-colour-pop;
+}
+
+.size-pop {
+  font-size: 8rem;
+}
+
+.svg-icon {
+  fill: $text-colour-pop;
+}
