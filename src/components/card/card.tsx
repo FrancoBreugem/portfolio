@@ -1,10 +1,10 @@
-import styles from './card.module.css';
+import './card.scss'
 
 function Card() {
 
   return (
-    <div className={styles.card}>
-      <h3 className={styles.cardTitle}>
+    <div className='card'>
+      <h3 className='card-title'>
         Card Title
       </h3>
       <p>

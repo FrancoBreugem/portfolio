@@ -1,10 +1,10 @@
-import styles from './bio.module.css';
+import './bio.scss';
 import LinkedInIcon from '../../assets/linkedin.svg'
 
 function Bio() {
 
   return (
-    <div className={styles.bio}>
+    <div className='bio'>
       <h1>
         Hey, I'm Franco.
       </h1>

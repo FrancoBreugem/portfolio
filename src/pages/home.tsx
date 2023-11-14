@@ -1,14 +1,14 @@
 import Bio from '../components/bio/bio';
 import Card from '../components/card/card';
-import styles from './home.module.css';
+import './home.scss'
 
 function Home() {
 
   return (
-    <div className={styles.homeContainer}>
+    <div className='home-container'>
       <Bio />
 
-      <div className={styles.cardSection}>
+      <div className='card-section'>
         {Array.from({ length: 9 }).map((_, index) => (
           <Card key={index} />
         ))}
