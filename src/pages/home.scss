@@ -1,9 +1,15 @@
 .home-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   background-color: rgb(13, 13, 13);
 }
 
 .card-section {
   padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+      grid-template-columns: 1fr 1fr;
+  }
 }
