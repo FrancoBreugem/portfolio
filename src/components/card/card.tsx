@@ -1,15 +1,30 @@
+import { Experience } from '../../interfaces/experience-type'
 import './card.scss'
 
-const Card: React.FC = () => {
+type CardProps = {
+  experience: Experience
+}
+
+const Card: React.FC<CardProps> = ({ experience }) => {
 
   return (
     <div className='card'>
       <h3 className='card-title'>
-        Card Title
+        <span className='color-pop'>
+          {experience.projectName}
+        </span>
       </h3>
+
+      <h4>
+        {experience.dateRange}
+      </h4>
+
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque est, condimentum mattis justo vitae, dapibus viverra magna. Donec blandit dolor a ullamcorper gravida. Phasellus gravida ut lectus nec pharetra. Praesent efficitur tellus sit amet efficitur cursus. Praesent tellus tellus, placerat eu pretium eget, pretium cursus eros. Aenean at tempor.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque est, condimentum mattis justo vitae, dapibus viverra magna. Donec blandit dolor a ullamcorper gravida. Phasellus gravida ut lectus nec pharetra. Praesent efficitur tellus sit amet efficitur cursus. Praesent tellus tellus, placerat eu pretium eget, pretium cursus eros. Aenean at tempor.
+        {experience.projectSummary}
+      </p>
+
+      <p>
+        {experience.myRole}
       </p>
     </div>
   )

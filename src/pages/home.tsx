@@ -1,5 +1,6 @@
 import Bio from '../components/bio/bio';
 import Card from '../components/card/card';
+import { experience } from '../content/experience';
 import './home.scss'
 
 const Home: React.FC = () => {
@@ -9,8 +10,10 @@ const Home: React.FC = () => {
       <Bio />
 
       <div className='card-section'>
-        {Array.from({ length: 9 }).map((_, index) => (
-          <Card key={index} />
+        {experience.map((item, index) => (
+          <p key={index}>
+            <Card key={index} experience={item} />
+          </p>
         ))}
       </div>
     </div>

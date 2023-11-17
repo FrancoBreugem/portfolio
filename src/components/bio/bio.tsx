@@ -1,4 +1,4 @@
-import { SvgIconType } from '../../enums/svg-icon-type';
+import { SvgIconEnum } from '../../enums/svg-icon-enum';
 import SvgIcon from '../svg-icon/svg-icon';
 import './bio.scss';
 
@@ -20,7 +20,7 @@ const Bio: React.FC = () => {
 
       <div>
         <SvgIcon 
-          icon={SvgIconType.LinkedIn} 
+          icon={SvgIconEnum.LinkedIn} 
           url='https://www.linkedin.com/in/franco-breugem-3b4533184/' 
         />
       </div>

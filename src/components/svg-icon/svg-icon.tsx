@@ -1,19 +1,19 @@
 import './svg-icon.scss';
 import LinkedInIcon from '../../assets/linkedin.svg';
-import { SvgIconType } from '../../enums/svg-icon-type';
+import { SvgIconEnum } from '../../enums/svg-icon-enum';
 
 const iconMapping = {
-  [SvgIconType.LinkedIn]: LinkedInIcon,
+  [SvgIconEnum.LinkedIn]: LinkedInIcon,
 };
 
 type SvgIconProps = {
-  icon: SvgIconType;
+  icon: SvgIconEnum;
   url?: string;
 }
 
 const SvgIcon: React.FC<SvgIconProps> = ({ icon, url }) => {
   const mappedIcon = iconMapping[icon];
-  const altText = `Icon - ${SvgIconType[icon]}`;
+  const altText = `Icon - ${SvgIconEnum[icon]}`;
 
   return (
     url
