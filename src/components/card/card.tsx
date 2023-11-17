@@ -1,6 +1,6 @@
 import './card.scss'
 
-function Card() {
+const Card: React.FC = () => {
 
   return (
     <div className='card'>

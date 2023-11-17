@@ -1,7 +1,8 @@
+import { SvgIconType } from '../../enums/svg-icon-type';
+import SvgIcon from '../svg-icon/svg-icon';
 import './bio.scss';
-import LinkedInIcon from '../../assets/linkedin.svg'
 
-function Bio() {
+const Bio: React.FC = () => {
 
   return (
     <div className='bio'>
@@ -18,7 +19,7 @@ function Bio() {
       </p>
 
       <div>
-        <img src={LinkedInIcon} alt="LinkedIn Icon" className="svg-icon" />
+        <SvgIcon icon={SvgIconType.LinkedIn} />
       </div>
     </div>
   )

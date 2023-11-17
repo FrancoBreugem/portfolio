@@ -2,7 +2,7 @@ import Bio from '../components/bio/bio';
 import Card from '../components/card/card';
 import './home.scss'
 
-function Home() {
+const Home: React.FC = () => {
 
   return (
     <div className='home-container'>
