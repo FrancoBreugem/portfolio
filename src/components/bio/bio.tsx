@@ -19,7 +19,10 @@ const Bio: React.FC = () => {
       </p>
 
       <div>
-        <SvgIcon icon={SvgIconType.LinkedIn} />
+        <SvgIcon 
+          icon={SvgIconType.LinkedIn} 
+          url='https://www.linkedin.com/in/franco-breugem-3b4533184/' 
+        />
       </div>
     </div>
   )

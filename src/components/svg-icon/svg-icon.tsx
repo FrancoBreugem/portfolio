@@ -8,13 +8,20 @@ const iconMapping = {
 
 type SvgIconProps = {
   icon: SvgIconType;
+  url?: string;
 }
 
-const SvgIcon: React.FC<SvgIconProps> = ({ icon }) => {
+const SvgIcon: React.FC<SvgIconProps> = ({ icon, url }) => {
   const mappedIcon = iconMapping[icon];
   const altText = `Icon - ${SvgIconType[icon]}`;
 
   return (
+    url
+    ? 
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      <img src={mappedIcon} alt={altText} className="svg-icon" />
+    </a>
+    : 
     <img src={mappedIcon} alt={altText} className="svg-icon" />
   )
 }
