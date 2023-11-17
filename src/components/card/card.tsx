@@ -1,4 +1,5 @@
 import { Experience } from '../../interfaces/experience-type'
+import Chip from '../chip/chip'
 import './card.scss'
 
 type CardProps = {
@@ -26,6 +27,12 @@ const Card: React.FC<CardProps> = ({ experience }) => {
       <p>
         {experience.myRole}
       </p>
+
+      <div className='card-chips'>
+        {experience.tags.map((item, index) => (
+          <Chip key={index} text={item}  />
+        ))}
+      </div>
     </div>
   )
 }

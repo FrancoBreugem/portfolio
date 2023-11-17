@@ -11,9 +11,7 @@ const Home: React.FC = () => {
 
       <div className='card-section'>
         {experience.map((item, index) => (
-          <p key={index}>
-            <Card key={index} experience={item} />
-          </p>
+          <Card key={index} experience={item} />
         ))}
       </div>
     </div>

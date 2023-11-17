@@ -1,7 +1,9 @@
+@import '../styles/colours';
+
 .home-container {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: rgb(13, 13, 13);
+  background-color: $dark-primary;
 }
 
 .card-section {
@@ -10,6 +12,6 @@
 
 @media (min-width: 768px) {
   .home-container {
-      grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }

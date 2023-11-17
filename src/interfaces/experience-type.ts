@@ -3,4 +3,5 @@ export interface Experience {
   projectSummary: string;
   myRole: string;
   dateRange: string;
+  tags: string[];
 }
