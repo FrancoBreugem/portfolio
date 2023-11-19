@@ -1,0 +1,28 @@
+@import '../../../styles/colours';
+
+.work-places {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+}
+
+.work-places-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.work-places-header-text {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+.work-places-header-line {
+  width: 100%;
+  height: 3px;
+  background-color: $text-colour-secondary;
+  opacity: 0.3;
+}

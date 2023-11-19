@@ -1,5 +1,5 @@
-import { experience } from '../../content/experience'
-import Card from '../card/card'
+import { experience } from '../../../content/projects-content'
+import Card from '../../card/card'
 import './experience.scss'
 
 const Experience: React.FC = () => {
@@ -9,7 +9,7 @@ const Experience: React.FC = () => {
       <div className='experience-header'>
         <div className='experience-header-line' />
         <h2 className='experience-header-text'>
-          Experience
+          Projects
         </h2>
         <div className='experience-header-line' />
       </div>
