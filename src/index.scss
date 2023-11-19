@@ -34,14 +34,15 @@ body {
     'Poppins',
     sans-serif;
   color: $text-colour-base;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.2px;
 }
 
 p {
   line-height: 1.75rem;
   font-weight: 300;
-  font-size: 1.1rem;
   margin: 0.5rem 0;
+
+  font-size: clamp(1rem, 2vw, 1.15rem); 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,11 +52,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 6vw, 4rem); 
+  line-height: 0.75;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1.25rem, 5vw, 2rem); 
+}
+
+h3 {
+  font-size: clamp(1rem, 3vw, 1.25rem); 
 }
 
 .color-pop {
@@ -63,7 +69,7 @@ h2 {
 }
 
 .size-pop {
-  font-size: 8rem;
+  font-size: clamp(5rem, 6vw, 8rem); 
 }
 
 .svg-icon {

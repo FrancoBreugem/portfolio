@@ -10,7 +10,7 @@ const Card: React.FC<CardProps> = ({ experience }) => {
 
   return (
     <div className='card'>
-      <h2 className='card-title'>
+      <h2>
         <span className='color-pop'>
           {experience.projectName}
         </span>
