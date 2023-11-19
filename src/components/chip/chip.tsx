@@ -1,7 +1,7 @@
 import './chip.scss';
 
 type ChipProps = {
-  text: string
+  text: string;
 }
 
 const Chip: React.FC<ChipProps> = ({ text }) => {
