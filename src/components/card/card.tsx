@@ -10,19 +10,27 @@ const Card: React.FC<CardProps> = ({ experience }) => {
 
   return (
     <div className='card'>
-      <h3 className='card-title'>
+      <h2 className='card-title'>
         <span className='color-pop'>
           {experience.projectName}
         </span>
+      </h2>
+
+      <h3>
+        {experience.dateRange}
       </h3>
 
-      <h4>
-        {experience.dateRange}
-      </h4>
+      <h3>
+        Project Summary:
+      </h3>
 
       <p>
         {experience.projectSummary}
       </p>
+
+      <h3>
+        My Role:
+      </h3>
 
       <p>
         {experience.myRole}
