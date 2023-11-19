@@ -6,10 +6,6 @@
   background-color: $dark-primary;
 }
 
-.card-section {
-  padding: 1.25rem;
-}
-
 @media (min-width: 768px) {
   .home-container {
     grid-template-columns: 1fr 1fr;
