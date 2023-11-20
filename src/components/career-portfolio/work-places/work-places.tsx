@@ -10,7 +10,7 @@ const WorkPlaces: React.FC = () => {
       <div className='work-places-header'>
         <div className='work-places-header-line' />
         <h2 className='work-places-header-text'>
-          Where I've Worked
+          <span className='color-pop'>Where I've Worked</span>
         </h2>
         <div className='work-places-header-line' />
       </div>

@@ -1,9 +1,11 @@
 import './svg-icon.scss';
 import LinkedInIcon from '../../assets/linkedin.svg';
+import GitHubIcon from '../../assets/github.svg';
 import { SvgIconEnum } from '../../enums/svg-icon-enum';
 
 const iconMapping = {
   [SvgIconEnum.LinkedIn]: LinkedInIcon,
+  [SvgIconEnum.GitHub]: GitHubIcon,
 };
 
 type SvgIconProps = {

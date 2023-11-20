@@ -10,7 +10,7 @@ const Experience: React.FC = () => {
       <div className='experience-header'>
         <div className='experience-header-line' />
         <h2 className='experience-header-text'>
-          Projects
+          <span className='color-pop'>Projects</span>
         </h2>
         <div className='experience-header-line' />
       </div>
