@@ -1,6 +1,5 @@
-import { SvgIconEnum } from '../../enums/svg-icon-enum';
-import SvgIcon from '../svg-icon/svg-icon';
 import './bio.scss';
+import Hobbies from './hobbies/hobbies';
 import TechStack from './tech-stack/tech-stack';
 
 const Bio: React.FC = () => {
@@ -19,7 +18,10 @@ const Bio: React.FC = () => {
         From ideas to deployments, I craft robust web applications with a keen <span className='color-pop'>focus on front-end frameworks</span>. Skilled in <span className='color-pop'>languages</span> like SQL, C#, Python, and JavaScript, I also handle various <span className='color-pop'>tools</span> including Azure DevOps, Visual Studio, SQL Server, and GitHub with comfort.
       </p>
 
-      <TechStack />
+      <div className='tech-hobbies'>
+        <TechStack />
+        <Hobbies />
+      </div>
       
       {/* <div>
         <SvgIcon 

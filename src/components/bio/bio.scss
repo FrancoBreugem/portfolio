@@ -13,11 +13,21 @@
   margin-top: 2rem;
 }
 
+.tech-hobbies {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
 @media (min-width: 768px) {
   .bio {
     height: 100vh;
     margin: 0;
     position: sticky;
     top: 0;
+  }
+
+  .tech-hobbies {
+    justify-content: start;
   }
 }
