@@ -1,4 +1,5 @@
 import { experience } from '../../../content/projects-content'
+import { Experience } from '../../../interfaces/experience-type'
 import Card from '../../card/card'
 import './work-places.scss'
 
@@ -14,13 +15,18 @@ const WorkPlaces: React.FC = () => {
         <div className='work-places-header-line' />
       </div>
       
-      <div>
+      <>
         {
-          experience.map((item, index) => (
-            <Card key={index} experience={item} />
+          experience.map((item: Experience, index: number) => (
+            <>
+              { index !== 0 &&
+                <div className='work-places-header-line' />
+              }
+              <Card key={index} experience={item} />
+            </>
           ))
         }
-      </div>
+      </>
     </div>
   )
 }
