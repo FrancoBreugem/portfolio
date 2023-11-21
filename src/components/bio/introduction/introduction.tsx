@@ -5,7 +5,7 @@ const Introduction: React.FC = () => {
   return (
     <>
       <h1>
-        Hey, I'm John Doe<span className='size-pop color-pop'>.</span>
+        Hey, I'm Franco Breugem<span className='size-pop color-pop'>.</span>
       </h1>
       
       <h2>
